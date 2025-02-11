@@ -47,6 +47,10 @@ android {
     lint {
         disable 'InvalidPackage'
     }
+
+    packagingOptions {
+        doNotStrip("**/*.so")
+    }
 }
 
 flutter {

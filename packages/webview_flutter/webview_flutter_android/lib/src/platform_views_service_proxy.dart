@@ -14,7 +14,7 @@ class PlatformViewsServiceProxy {
   const PlatformViewsServiceProxy();
 
   /// Proxy method for [PlatformViewsService.initExpensiveAndroidView].
-  ExpensiveAndroidViewController initExpensiveAndroidView({
+  HybridAndroidViewController initExpensiveAndroidView({
     required int id,
     required String viewType,
     required TextDirection layoutDirection,
@@ -22,7 +22,7 @@ class PlatformViewsServiceProxy {
     MessageCodec<dynamic>? creationParamsCodec,
     VoidCallback? onFocus,
   }) {
-    return PlatformViewsService.initExpensiveAndroidView(
+    return PlatformViewsService.initHybridAndroidView(
       id: id,
       viewType: viewType,
       layoutDirection: layoutDirection,

@@ -1044,8 +1044,7 @@ class AndroidWebViewWidget extends PlatformWebViewWidget {
       onCreatePlatformView: (PlatformViewCreationParams params) {
         return _initAndroidView(
           params,
-          displayWithHybridComposition:
-              _androidParams.displayWithHybridComposition,
+          displayWithHybridComposition: true, /// !!!!!!!!!!!!
           platformViewsServiceProxy: _androidParams.platformViewsServiceProxy,
           view:
               (_androidParams.controller as AndroidWebViewController)._webView,
